@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>....</title>
+   
+</head>
+<style>
+    body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f0f0f0;
+}
+
+@keyframes appearDisappearAnimation {
+    0%, 100% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(-50px);
+    }
+}
+
+.jumping-text {
+    position: absolute;
+    color: #000;
+    font-size: 24px;
+    white-space: nowrap;
+    animation: appearDisappearAnimation 3s infinite;
+}
+
+</style>
+<body>
+    <script src="script.js"></script>
+</body>
+</html>
